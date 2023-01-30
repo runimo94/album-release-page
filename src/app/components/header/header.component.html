@@ -1,0 +1,53 @@
+<header class="sticky top-0 z-10">
+  <nav
+    class="backdrop-filter backdrop-blur bg-black/20 lg:bg-transparent lg:backdrop-blur-none flex flex-row items-center justify-between px-4">
+    <img class="w-14 p-3 lg:w-20" src="../assets/images/monstercat-logo.webp" alt="logo monstercat">
+
+    <app-social class="w-44 hidden sm:inline lg:hidden" direction="horizontal"></app-social>
+
+    <img (click)="open()" class="w-14 p-3" src="../assets/icons/menu.svg" alt="menu icon">
+  </nav>
+
+  <!--Right SideNav-->
+  <nav id="rightSideNav" class="hidden h-screen fixed top-0 bottom-0 right-0 p-2 w-96 bg-black 
+    z-20">
+
+    <div class="flex flex-col h-screen justify-between">
+      <div class="flex flex-col justify-start">
+        <div class="flex flex-row justify-between p-5 mb-5">
+          <img class="w-44" src="../assets/images/monstercat-logo-white.svg" alt="monstercat-logo-white">
+          <img (click)="close()" class="w-8" src="../assets/icons/close.svg" alt="">
+        </div>
+        <div class="flex flex-col">
+          <ul class="flex flex-col gap-5 px-5 text-white text-md text-start font-unbounded font-semibold uppercase">
+            <li>Music</li>
+            <li>Artists</li>
+            <li>About</li>
+            <li>News</li>
+            <li>Events</li>
+            <li>Programming</li>
+            <li>Gold</li>
+            <li>Partners</li>
+            <li>Press</li>
+            <li>Player</li>
+            <li>Shop</li>
+            <li>Lost civilization</li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex flex-col gap-4">
+        <app-social class="w-44"></app-social>
+        <div class="flex flex-row gap-5">
+          <button class="text-white font-unbounded uppercase border px-5 py-1">Sign in</button>
+          <button class="text-white font-unbounded uppercase">Or sign up</button>
+        </div>
+      </div>
+    </div>
+
+  </nav>
+
+  <div class="absolute top-[120px] right-0 hidden lg:inline px-5">
+    <app-social direction="vertical"></app-social>
+  </div>
+
+</header>
