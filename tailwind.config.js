@@ -7,6 +7,7 @@ module.exports = {
         rubik: ["Rubik", "snas-serif"],
         montserrat: ["Montserrat", "sans-serif"],
         unbounded: ["Unbounded", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
       },
       colors: {
         "green-monstercat": "#518970",
