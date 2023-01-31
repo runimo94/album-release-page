@@ -1,0 +1,59 @@
+<div class="grid grid-cols-1 lg:grid-cols-2 px-8 sm:px-20 lg:px-8 md:px-8 py-14 md:w-fit 
+    mx-auto justify-center items-start gap-y-8 gap-x-14">
+
+  <div class="flex flex-col gap-y-9 justify-end
+    md:flex-row-reverse md:items-end">
+    <img class="w-[600px] md:w-[750px] lg:w-[450px] xl:w-[500px] 2xl:w-[600px]" [src]="releaseImgUrl"
+      alt="imagen del release">
+    <p class="text-white whitespace-nowrap font-montserrat text-sm md:text-lg text-start italic
+      md:-rotate-90 md:mb-0 md:w-7">{{ releaseData }}
+    </p>
+  </div>
+
+  <div class="flex flex-col gap-y-10 my-auto lg:pt-10">
+    <div>
+      <p class="text-white text-start font-unbounded whitespace-nowrap font-extrabold text-3xl mb-3
+        xl:text-[50px]">{{releaseName | uppercase}}</p>
+      <p class="text-slate-200 text-start font-unbounded text-lg
+        xl:text-3xl">{{ subText | uppercase }}</p>
+    </div>
+
+    <div class="hidden md:flex flex-row items-center justify-start">
+      <div class="relative" *ngFor="let artist of listArtist">
+        <img class="artist-image  border-none w-24 ml-3 mb-5 rounded-full aspect-square overflow-hidden object-cover"
+          [src]="artist.imgUrl" alt="artista1">
+        <div class="tooltip text-sm font-unbounded px-2 bg-slate-300 rounded shadow-xl">
+          {{ artist.name | uppercase}}
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-row gap-x-2">
+      <button class="group py-2 px-7 lg:py-4 lg:px-10 inline-flex items-center text-white text-xs lg:text-sm font-semibold font-unbounded bg-indigo-400
+        transition duration-200 hover:bg-white hover:text-black hover:stroke-black">
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2 transition duration-200 group-hover:stroke-black"
+          stroke="white" viewBox="0 0 24 24" stroke-width="1.5">
+          <path stroke-linecap="round" fill-opacity="0" stroke-linejoin="round"
+            d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+        </svg>
+
+        <span class="whitespace-nowrap">LISTEN NOW</span>
+      </button>
+
+      <button class="group py-2 px-3 lg:py-4 lg:px-5 inline-flex items-center text-white text-xs lg:text-sm font-semibold font-unbounded border 
+          transition duration-200 hover:bg-white hover:text-black">
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2 transition duration-200 group-hover:stroke-black"
+          stroke="white" viewBox="0 0 24 24" stroke-width="1.5">
+          <path stroke-linecap="round" fill-opacity="0" stroke-linejoin="round"
+            d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z" />
+        </svg>
+
+        <span>SHARE</span>
+      </button>
+
+    </div>
+  </div>
+
+</div>
