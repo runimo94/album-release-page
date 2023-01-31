@@ -1,5 +1,4 @@
-<div class="grid grid-cols-1 lg:grid-cols-2 px-8 sm:px-20 lg:px-8 md:px-8 py-14 md:w-fit 
-    mx-auto justify-center items-start gap-y-8 gap-x-14">
+<div class="grid grid-cols-1 lg:grid-cols-2 py-14 justify-center items-start gap-y-8 gap-x-14">
 
   <div class="flex flex-col gap-y-9 justify-end
     md:flex-row-reverse md:items-end">
@@ -20,7 +19,7 @@
 
     <div class="hidden md:flex flex-row items-center justify-start">
       <div class="relative" *ngFor="let artist of listArtist">
-        <img class="artist-image  border-none w-24 ml-3 mb-5 rounded-full aspect-square overflow-hidden object-cover"
+        <img class="tooltip-reciever border-none w-24 ml-3 mb-5 rounded-full aspect-square overflow-hidden object-cover"
           [src]="artist.imgUrl" alt="artista1">
         <div class="tooltip text-sm font-unbounded px-2 bg-slate-300 rounded shadow-xl">
           {{ artist.name | uppercase}}
