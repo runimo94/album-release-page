@@ -1,0 +1,13 @@
+<div class="flex flex-col gap-y-5">
+  <h2 class="text-white font-unbounded font-bold text-2xl">OTHER RELEASES LIKE THIS</h2>
+  <div class="grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-6 gap-4">
+
+    <div class="flex flex-col" *ngFor="let otherRelease of listOtherReleases">
+      <img class="mb-3 w-[180px] sm:w-[240px] md:w-[360px] lg:w-[240px] xl:[w-170px] 2xl:[230px]"
+        [src]="otherRelease.imgUrl" alt="">
+      <h3 class="text-white font-unbounded font-semibold">{{ otherRelease.name | uppercase }}</h3>
+      <h4 class="text-white font-montserrat text-sm italic">{{ otherRelease.artist }}</h4>
+    </div>
+
+  </div>
+</div>
