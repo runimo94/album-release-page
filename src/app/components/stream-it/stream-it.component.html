@@ -1,11 +1,11 @@
-<div class="grid grid-rows-2">
+<div class="grid grid-rows-2 xl:w-fit">
 
-  <div class="text-white text-2xl sm:text-3xl md:text-[40px] sm:font-bold font-unbounded">
+  <div class="text-white text-3xl md:text-[40px] sm:font-bold font-unbounded">
     STREAM IT YOUR WAY
   </div>
 
   <div class="flex items-center cursor-pointer">
-    <div class="flex relative gap-x-2 items-center border p-3 h-12 md:h-16">
+    <div class="flex relative gap-x-2 items-center border p-3 h-10 md:h-16">
       <img class="tooltip-reciever" src="../assets/social/monstercatplayer.svg" alt="">
       <div class="tooltip-reciever text-white text-xs font-unbounded">PLAYER</div>
       <div class="tooltip text-sm whitespace-nowrap font-unbounded px-2 bg-slate-300 rounded shadow-xl">
@@ -14,7 +14,7 @@
     </div>
 
     <div class="relative" *ngFor="let stream of listStreams">
-      <img class="tooltip-reciever h-12 md:h-16 border p-3" [src]="stream.urlImg" alt="">
+      <img class="tooltip-reciever h-10 md:h-16 border p-3" [src]="stream.urlImg" alt="">
       <div class="tooltip text-sm whitespace-nowrap font-unbounded px-2 bg-slate-300 rounded shadow-xl">
         {{ 'STREAM ON ' + stream.name | uppercase }}
       </div>
