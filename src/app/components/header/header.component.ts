@@ -13,14 +13,10 @@ export class HeaderComponent implements OnInit {
   }
 
   open() {
-    // this.sidenav?.classList.add('animate__slideInRight');
     this.sidenav?.classList.remove('hidden');
-    // this.sidenav?.classList.remove('animate__slideOutRight');
   }
 
   close() {
-    // this.sidenav?.classList.add('animate__slideOutRight');
-    // this.sidenav?.classList.remove('animate__slideInRight');
     this.sidenav?.classList.add('hidden');
   }
 }
