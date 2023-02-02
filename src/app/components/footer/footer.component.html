@@ -25,7 +25,9 @@
     <form (ngSubmit)="submit()" #formEmail="ngForm" class="mt-3 flex flex-row">
       <input type="text" placeholder="Enter email" name="email" [ngModel]="initForm.email" required
         class="text-white w-full font-montserrat bg-transparent border-0 outline-none appearance-none">
-      <button type="submit" [disabled]="formEmail.invalid" class="text-white">></button>
+      <button type="submit" [disabled]="formEmail.invalid" class="">
+        <fa-icon [icon]="faArrowRightLong" class="text-white"></fa-icon>
+      </button>
     </form>
     <hr class="bg-white opacity-50 w-full">
   </div>
@@ -37,7 +39,15 @@
   <div>
     <p class="text-white text-opacity-80 font-montserrat italic">2011 - 2023 © Monstercat, All Rights Reserved</p>
   </div>
-  <div class="text-white">
-    ICONS ICONS ICONS ICONS ICONS
+  <div class="flex flex-row text-white text-xl gap-x-5 sm:gap-x-3 md:gap-x-5">
+    <fa-icon [icon]="faYoutube"></fa-icon>
+    <fa-icon [icon]="faInstagram"></fa-icon>
+    <fa-icon [icon]="faTiktok"></fa-icon>
+    <fa-icon [icon]="faTwitter"></fa-icon>
+    <fa-icon [icon]="faSpotify"></fa-icon>
+    <fa-icon [icon]="faApple"></fa-icon>
+    <fa-icon [icon]="faTwitch"></fa-icon>
+    <fa-icon [icon]="faFacebook"></fa-icon>
+    <fa-icon [icon]="faDiscord"></fa-icon>
   </div>
 </div>

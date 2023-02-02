@@ -24,35 +24,6 @@ export class DataService {
     },
   ];
 
-  //Datos stream it component
-  public listStreams: Stream[] = [
-    {
-      name: 'Bandcamp',
-      urlImg: '../assets/social/monstercatplayer.svg',
-      url: '',
-    },
-    {
-      name: 'Soundcloud',
-      urlImg: '../assets/social/monstercatplayer.svg',
-      url: '',
-    },
-    {
-      name: 'Apple music',
-      urlImg: '../assets/social/monstercatplayer.svg',
-      url: '',
-    },
-    {
-      name: 'Youtube',
-      urlImg: '../assets/social/monstercatplayer.svg',
-      url: '',
-    },
-    {
-      name: 'Spotify',
-      urlImg: '../assets/social/monstercatplayer.svg',
-      url: '',
-    },
-  ];
-
   //Datos track list component
   public trackList: Song[] = [
     {

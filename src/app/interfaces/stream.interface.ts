@@ -1,5 +1,5 @@
 export interface Stream {
   name: string;
-  urlImg: string;
+  fa_icon: string;
   url: string;
 }

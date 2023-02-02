@@ -1,6 +1,11 @@
 import { Component } from '@angular/core';
-import { Stream } from 'src/app/interfaces/stream.interface';
-import { DataService } from 'src/app/services/data.service';
+import {
+  faBandcamp,
+  faSoundcloud,
+  faApple,
+  faYoutube,
+  faSpotify,
+} from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-stream-it',
@@ -8,9 +13,9 @@ import { DataService } from 'src/app/services/data.service';
   styleUrls: ['./stream-it.component.scss'],
 })
 export class StreamItComponent {
-  public listStreams?: Stream[];
-
-  constructor(private data: DataService) {
-    this.listStreams = this.data.listStreams;
-  }
+  faBandcamp = faBandcamp;
+  faSoundcloud = faSoundcloud;
+  faApple = faApple;
+  faYoutube = faYoutube;
+  faSpotify = faSpotify;
 }

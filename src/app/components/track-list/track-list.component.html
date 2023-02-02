@@ -5,19 +5,21 @@
     <div class="flex flex-row justify-between" *ngFor="let track of trackList; let i=index">
 
       <div class="flex flex-row items-center gap-x-4">
-        <div class="text-white font-montserrat text-lg">{{i+1}}</div>
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2" stroke="white" viewBox="0 0 24 24"
-          stroke-width="1.5">
-          <path stroke-linecap="round" fill-opacity="0" stroke-linejoin="round"
-            d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
-        </svg>
+        <div class="text-white font-montserrat text-lg w-3">{{i+1}}</div>
+        <div class="w-10 flex items-center justify-start">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2" stroke="white" viewBox="0 0 24 24"
+            stroke-width="1.5">
+            <path stroke-linecap="round" fill-opacity="0" stroke-linejoin="round"
+              d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+          </svg>
+        </div>
         <div class="flex flex-col">
           <h3 class="text-white font-unbounded">{{ track.name | titlecase }}</h3>
           <h4 class="text-white font-unbounded text-xs">{{ track.artistName | uppercase }}</h4>
         </div>
       </div>
 
-      <div class="flex flex-row gap-x-2 items-center">
+      <div class="flex flex-row gap-x-3 items-center">
         <p class="text-white font-montserrat text-lg">{{ track.duration * 1000 | date:'m:ss'}}</p>
         <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mr-2" stroke="white" viewBox="0 0 24 24"
           stroke-width="1.5">

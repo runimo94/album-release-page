@@ -10,6 +10,7 @@ import { StreamItComponent } from './components/stream-it/stream-it.component';
 import { TrackListComponent } from './components/track-list/track-list.component';
 import { OtherReleasesComponent } from './components/other-releases/other-releases.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { FooterComponent } from './components/footer/footer.component';
     OtherReleasesComponent,
     FooterComponent,
   ],
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],
 })
