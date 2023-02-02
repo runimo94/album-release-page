@@ -9,10 +9,10 @@
   </nav>
 
   <!--Right SideNav-->
-  <nav id="rightSideNav" class="hidden h-screen fixed top-0 bottom-0 right-0 p-2 w-96 bg-black 
+  <nav id="rightSideNav" class="hidden absolute top-0 bottom-0 right-0 w-96 
     z-20">
 
-    <div class="flex flex-col h-screen justify-between">
+    <div class="flex flex-col h-screen justify-between bg-black p-2">
       <div class="flex flex-col justify-start">
         <div class="flex flex-row justify-between p-5 mb-5">
           <img class="w-44" src="../assets/images/monstercat-logo-white.svg" alt="monstercat-logo-white">
@@ -35,8 +35,8 @@
           </ul>
         </div>
       </div>
-      <div class="flex flex-col gap-4">
-        <app-social class="w-44"></app-social>
+      <div class="flex flex-col gap-4 items-start p-5">
+        <app-social></app-social>
         <div class="flex flex-row gap-5">
           <button class="text-white font-unbounded uppercase border px-5 py-1">Sign in</button>
           <button class="text-white font-unbounded uppercase">Or sign up</button>
