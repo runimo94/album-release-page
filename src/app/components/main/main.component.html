@@ -21,7 +21,7 @@
       <div class="relative" *ngFor="let artist of listArtist">
         <img class="tooltip-reciever border-none w-24 ml-3 mb-5 rounded-full aspect-square overflow-hidden object-cover"
           [src]="artist.imgUrl" alt="artista1">
-        <div class="tooltip text-sm font-unbounded px-2 bg-slate-300 rounded shadow-xl">
+        <div class="tooltip text-sm font-unbounded px-2 bg-slate-300 rounded shadow-xl whitespace-nowrap">
           {{ artist.name | uppercase}}
         </div>
       </div>

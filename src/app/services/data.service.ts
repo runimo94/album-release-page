@@ -19,7 +19,7 @@ export class DataService {
       imgUrl: '../assets/images/artist1.webp',
     },
     {
-      name: 'Goiko',
+      name: 'Dani King',
       imgUrl: '../assets/images/artist2.webp',
     },
   ];
