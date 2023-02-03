@@ -5,34 +5,111 @@
 
     <app-social class="w-44 hidden sm:inline xl:hidden" direction="horizontal"></app-social>
 
-    <img (click)="open()" class="w-14 p-3" src="../assets/icons/menu.svg" alt="menu icon">
+    <img (click)="handleSideNav()" class="w-14 p-3" src="../assets/icons/menu.svg" alt="menu icon">
   </nav>
 
   <!--Right SideNav-->
-  <nav id="rightSideNav" class="hidden absolute top-0 bottom-0 right-0 w-80 z-20 ">
+  <nav id="rightSideNav" class="hidden absolute top-0 bottom-0 right-0 w-80 z-20">
 
     <div class="flex flex-col h-screen justify-between bg-black p-2 overflow-y-auto">
       <div class="flex flex-col justify-start">
         <div class="flex flex-row justify-between p-5 mb-5">
           <img class="w-44" src="../assets/images/monstercat-logo-white.svg" alt="monstercat-logo-white">
-          <img (click)="close()" class="w-8" src="../assets/icons/close.svg" alt="">
+          <img (click)="handleSideNav()" class="w-8" src="../assets/icons/close.svg" alt="">
         </div>
-        <div class="flex flex-col">
-          <ul class="flex flex-col gap-5 px-5 text-white text-md text-start font-unbounded font-semibold uppercase">
-            <li>Music</li>
-            <li>Artists</li>
-            <li>About</li>
-            <li>News</li>
-            <li>Events</li>
-            <li>Programming</li>
-            <li>Gold</li>
-            <li>Partners</li>
-            <li>Press</li>
-            <li>Player</li>
-            <li>Shop</li>
-            <li>Lost civilization</li>
-          </ul>
-        </div>
+        <ul class="flex flex-col gap-5 px-5 text-white text-md font-unbounded font-semibold uppercase">
+          <li>
+            <div (click)="show($event)" class="flex flex-row items-center cursor-pointer">
+              Music
+              <fa-icon class="text-sm ml-2 fa-rotate-90" [icon]="faAngleUp"></fa-icon>
+            </div>
+            <ul class="childList hidden flex-col gap-y-4 mt-3 pl-2 text-xs text-gray-300 ">
+              <li class="transition duration-200 hover:text-white cursor-pointer">
+                OUR MUSIC
+              </li>
+              <li class="transition duration-200 hover:text-white cursor-pointer">
+                INSTINCT
+              </li>
+              <li class="transition duration-200 hover:text-white cursor-pointer">
+                UNCAGED
+              </li>
+              <li class="transition duration-200 hover:text-white cursor-pointer">
+                SILK
+              </li>
+            </ul>
+          </li>
+
+          <li>Artists</li>
+
+          <li>
+            <div (click)="show($event)" class="flex flex-row items-center cursor-pointer">
+              About
+              <fa-icon class="text-sm ml-2 fa-rotate-90" [icon]="faAngleUp"></fa-icon>
+            </div>
+            <ul class="childList hidden flex-col gap-y-4 mt-3 pl-2 text-xs text-gray-300">
+              <li class="transition duration-200 hover:text-white cursor-pointer">
+                ABOUT MONSTERCAT
+              </li>
+              <li class="transition duration-200 hover:text-white cursor-pointer">
+                DIVERSITY & INCLUSION
+              </li>
+              <li class="transition duration-200 hover:text-white cursor-pointer">
+                CODE OF ETHICS
+              </li>
+              <li class="transition duration-200 hover:text-white cursor-pointer">
+                ENVIRONMENTAL
+              </li>
+              <li class="transition duration-200 hover:text-white cursor-pointer">
+                CONTACT US
+              </li>
+            </ul>
+          </li>
+
+          <li>News</li>
+
+          <li>
+            <div (click)="show($event)" class="flex flex-row items-center cursor-pointer">
+              Events
+              <fa-icon class="text-sm ml-2 fa-rotate-90" [icon]="faAngleUp"></fa-icon>
+            </div>
+            <ul class="childList hidden flex-col gap-y-4 mt-3 pl-2 text-xs text-gray-300">
+              <li class="transition duration-200 hover:text-white cursor-pointer">
+                MONSTERCAT EVENTS EXPERIENCE
+              </li>
+              <li class="transition duration-200 hover:text-white cursor-pointer">
+                UPCOMING EVENTS
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <div (click)="show($event)" class="flex flex-row items-center cursor-pointer">
+              Programming
+              <fa-icon class="text-sm ml-2 fa-rotate-90" [icon]="faAngleUp"></fa-icon>
+            </div>
+            <ul class="childList hidden flex-col gap-y-4 mt-3 pl-2 text-xs text-gray-300">
+              <li class="transition duration-200 hover:text-white cursor-pointer">
+                MonstercatTV
+              </li>
+              <li class="transition duration-200 hover:text-white cursor-pointer">
+                CALL OF THE WILD
+              </li>
+              <li class="transition duration-200 hover:text-white cursor-pointer">
+                SILK SHOWCASE
+              </li>
+              <li class="transition duration-200 hover:text-white cursor-pointer">
+                UPCOMING SHOWS
+              </li>
+            </ul>
+          </li>
+
+          <li>Gold</li>
+          <li>Partners</li>
+          <li>Press</li>
+          <li>Player</li>
+          <li>Shop</li>
+          <li>Lost civilization</li>
+        </ul>
       </div>
       <div class="flex flex-col gap-4 items-start p-5">
         <app-social></app-social>
