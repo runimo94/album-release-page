@@ -10,17 +10,17 @@ import { OtherRelease } from '../interfaces/other-release.interface';
 export class DataService {
   //Datos main component
   public releaseData: string = 'Uncaged - Released January 30,2023';
-  public releaseImgUrl: string = '../assets/images/600.webp';
+  public releaseImgUrl: string = 'assets/images/600.webp';
   public releaseName: string = 'Hit my line';
   public subText: string = 'Skyler';
   public listArtirst: Artist[] = [
     {
       name: 'Skyler',
-      imgUrl: '../assets/images/artist1.webp',
+      imgUrl: 'assets/images/artist1.webp',
     },
     {
       name: 'Dani King',
-      imgUrl: '../assets/images/artist2.webp',
+      imgUrl: 'assets/images/artist2.webp',
     },
   ];
 
@@ -61,37 +61,37 @@ export class DataService {
   //Datos other release component
   public listOtherReleases: OtherRelease[] = [
     {
-      imgUrl: '../assets/images/image_release_1.webp',
+      imgUrl: 'assets/images/image_release_1.webp',
       name: 'Chasing stars',
       artist: 'Skyler Madison',
     },
     {
-      imgUrl: '../assets/images/image_release_2.webp',
+      imgUrl: 'assets/images/image_release_2.webp',
       name: 'Phoenix',
       artist: 'Skyler Madison feat. GLNNA',
     },
     {
-      imgUrl: '../assets/images/image_release_3.webp',
+      imgUrl: 'assets/images/image_release_3.webp',
       name: 'Be cool',
       artist: 'Bishu feat. Rue Melo',
     },
     {
-      imgUrl: '../assets/images/image_release_4.webp',
+      imgUrl: 'assets/images/image_release_4.webp',
       name: 'Solid ground',
       artist: 'Bishu & Casey Cook',
     },
     {
-      imgUrl: '../assets/images/image_release_5.webp',
+      imgUrl: 'assets/images/image_release_5.webp',
       name: 'Dream of you',
       artist: 'Bishu',
     },
     {
-      imgUrl: '../assets/images/image_release_6.webp',
+      imgUrl: 'assets/images/image_release_6.webp',
       name: 'Behind your eyes',
       artist: 'Bishu & Juneau',
     },
     {
-      imgUrl: '../assets/images/image_release_7.webp',
+      imgUrl: 'assets/images/image_release_7.webp',
       name: 'Hurt me too',
       artist: 'Bishu feat McCall',
     },
