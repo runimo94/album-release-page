@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        rubik: ["Rubik", "snas-serif"],
+        rubik: ["Rubik", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
         unbounded: ["Unbounded", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
